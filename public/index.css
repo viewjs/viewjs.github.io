@@ -1,0 +1,182 @@
+body {
+  font-family: "kepler-std", Georgia, Times, serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  background-color: #FFF;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "acta-display";
+  color: #333;
+  font-weight: 300;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: "kepler-std";
+}
+
+hr {
+  border: 1px solid #eee;
+}
+
+blockquote {
+  background: #F9F9F9;
+  padding: 8px 30px;
+}
+
+a {
+  vertical-align: baseline;
+  font-size: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  display: block;
+  background: #6fb4ce;
+  margin: 0px;
+  color: #fff;
+  padding: 0px;
+  font-family: "kepler-std";
+}
+
+.sidebar h1 {
+  font-weight: 400;
+  color: #fff;
+  font-family: "kepler-std";
+  font-size: 33px;
+  text-align: left;
+  padding-left: 40px;
+  text-transform: lowercase;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #7ac3de;
+}
+
+.sidebar ul, .sidebar li {
+  display: block;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar li a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.sidebar li.category {
+  atext-align: center;
+  padding-left: 40px;
+}
+
+.sidebar li.category a {
+  width: inherit;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin-left: 310px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  
+  width: 80%;
+}
+
+section.top {
+  text-align: center;
+  margin: 0px auto;
+  padding: 20px 0;
+  font-size: 21px;
+}
+
+section.top a {
+  color: #333;
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+header .title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.45em;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+header .title a {
+  color: #477B96;
+  text-decoration: none;
+  padding-bottom: 0px;
+
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+
+header .title a:hover {
+  color: #477B96;
+  text-decoration: underline;
+}
+
+section.content {
+  margin: 2.25em auto 2em;
+}
+
+section.content p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: #444;
+  font-family: "kepler-std";
+}
+
+/**
+ * Code
+ */
+
+pre code.hljs {
+  border-top: 4px solid #7e9dc2;
+  color: #333;
+  background: #f9f9f9;
+  afont-size: 17px;
+  font-family: Consolas, Lucida Console, Consolas, monospace;
+}
+
+code span.hljs-string {
+  color: #d43c3c;
+}
+
+code span.hljs-keyword {
+  color: #3c47d4;
+  font-weight: normal;
+}
