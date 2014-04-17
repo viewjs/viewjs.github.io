@@ -39,7 +39,7 @@ a {
   font-size: 100%;
 }
 
-.sidebar {
+.main .sidebar {
   position: fixed;
   left: 0px;
   width: 250px;
@@ -52,7 +52,7 @@ a {
   font-family: "kepler-std";
 }
 
-.sidebar h1 {
+.main .sidebar h1 {
   font-weight: 400;
   color: #fff;
   font-family: "kepler-std";
@@ -64,68 +64,68 @@ a {
   border-bottom: 1px solid #7ac3de;
 }
 
-.sidebar ul, .sidebar li {
+.main .sidebar ul, .sidebar li {
   display: block;
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-.sidebar li {
+.main .sidebar li {
   margin-bottom: 20px;
 }
 
-.sidebar li a {
+.main .sidebar li a {
   color: #fff;
   font-size: 22px;
   font-weight: 200;
   text-decoration: none;
 }
 
-.sidebar li.category {
+.main .sidebar li.category {
   atext-align: center;
   padding-left: 40px;
 }
 
-.sidebar li.category a {
+.main .sidebar li.category a {
   width: inherit;
 }
 
-.sidebar li a:hover {
+.main .sidebar li a:hover {
   text-decoration: underline;
 }
 
-.container {
+.main .container {
   width: 90%;
   max-width: 960px;
   margin-left: 310px;
 }
 
-.wrapper {
+.main .wrapper {
   margin: 0 auto;
   position: relative;
   
   width: 80%;
 }
 
-section.top {
+.main section.top {
   text-align: center;
   margin: 0px auto;
   padding: 20px 0;
   font-size: 21px;
 }
 
-section.top a {
+.main section.top a {
   color: #333;
   text-decoration: underline;
 }
 
-header {
+.main header {
   text-align: center;
   margin-top: 30px;
 }
 
-header .title {
+.main header .title {
   text-align: center;
   font-size: 40px;
   line-height: 1.45em;
@@ -133,7 +133,7 @@ header .title {
   font-weight: 400;
 }
 
-header .title a {
+.main header .title a {
   color: #477B96;
   text-decoration: none;
   padding-bottom: 0px;
@@ -143,16 +143,16 @@ header .title a {
   -webkit-transition: all 0.2s ease;
 }
 
-header .title a:hover {
+.main header .title a:hover {
   color: #477B96;
   text-decoration: underline;
 }
 
-section.content {
+.main section.content {
   margin: 2.25em auto 2em;
 }
 
-section.content p {
+.main section.content p {
   font-size: 1.2em;
   line-height: 1.6em;
   font-weight: 300;
@@ -179,4 +179,88 @@ code span.hljs-string {
 code span.hljs-keyword {
   color: #3c47d4;
   font-weight: normal;
+}
+
+
+/**
+ * Hero
+ */
+
+.hero .container {
+  width: 560px;
+  margin: 40px auto;
+  margin-top: 15%;
+}
+
+.hero h1 {
+  text-align: center;
+  color: #333;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.hero h3 {
+  text-align: center;
+  color: #000;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.hero .buttons {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.hero button.btn {
+  background: #000;
+  color: #fff;
+  font-size: 19px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border: 4px solid transparent;
+  cursor: pointer;
+}
+
+.hero button.intro {
+  background-color: #2fcc84;
+}
+
+.hero button.intro:hover {
+  border-color: #fff;
+}
+
+.hero .wbutton {
+  text-decoration: none;
+}
+
+.hero button.docs {
+  background-color: #444;
+}
+
+.hero button.docs:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.hero .snippet {
+  text-align: center;
+}
+
+.hero .snippet pre code {
+  background: #444;
+  color: #fff;
+  border-radius: 9px;
+  width: 400px;
+  margin: 0 auto;
+  border: none;
+  background: rgba(68, 68, 68, 0.5);
+}
+
+.hero {
+  background: url(/public/img/bg.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

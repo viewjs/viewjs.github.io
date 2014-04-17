@@ -1,15 +1,18 @@
 <html><head><title>View.js</title><link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css"/><link rel="stylesheet" href="/public/index.css"/><script type="text/javascript" src="//use.typekit.net/phm0nvf.js"></script><script>try{Typekit.load();}catch(e){}</script><script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body><div class="sidebar"><h1>Docs</h1><ul><li class="category"><a href="/">Overview</a></li><li class="category"><a href="/">Getting Started</a></li></ul></div><div class="container"><div class="wrapper"><section class="top"><a href="https://github.com/viewjs/view">Github</a></section><header><h1 class="title"><a href="">View.js</a></h1></header><section class="content"><div><p>View.js is a primitive low-level view layer. The vision starts off from first-principles: Taking an idea and deconstructing it into it&#39;s most atomic pieces.</p>
-<p>The current landscape for client-side &quot;frameworks&quot; is extremely fragmented, monolithic, inconsistent &mdash; broken.</p>
-<h2 id="monolithic">Monolithic</h2>
-<hr>
-<p>With massive projects like Rails, Ember, and Angular, we&#39;re faced with a world filled with monolithic software. They make it hard to reason about, hard to contribute, hard to understand &mdash; hard to cope with the complexity.</p>
-<p>Above all that, there&#39;s minimal code reuse outside the original project. Some have started to separate common functionality out, but the majority is still stuck, completely tied to the original purpose.</p>
-<p>While this might not be directly tied to monolithism, most frameworks have amounted to a large number of globals. Distribution is a likely cause, which is discussed further, but globals are a code-smell. They&#39;re hacky, unhealthy and hard to maintain.</p>
-<blockquote>
-<p>Have you ever gone into the Ember.js&#39; source code? Pick a file; now can you explain where stuff is coming from?</p>
-</blockquote>
-<h2 id="fragmented">Fragmented</h2>
-<hr>
-<p>Angular has dirty-checking and it&#39;s HTML-based templates; Ember has it&#39;s run-loop and handlebars; React has it&#39;s virtual-dom and JSX.</p>
-<p>When a new framework comes along, a new approach to rendering, what can we do? If you want it, you&#39;ll have to move your app to said framework. Why? Because <em>these frameworks are lock-ins</em>.</p>
+<p>The current landscape for client-side &quot;frameworks&quot; is extremely fragmented, monolithic, inconsistent &mdash; broken. We need to fix this.</p>
+<h2 id="modularize-everything">Modularize Everything</h2>
+<p>We need to move away from frameworks entirely. We need to move towards libraries. Libraries allow you to easily swap functionality by introducing an alternative module.</p>
+<p>There&#39;s a problem with this approach. Things are too chaotic, non-composable, and fragmented. That&#39;s why you need to think in first-principles, and find an acceptable base.</p>
+<p>View.js is just that. A single piece in the puzzle of the client-side (and server-side) landscape. View.js handles bringing the building block for reactive views and templates that are extremely extensible.</p>
+<h2 id="standardize">Standardize</h2>
+<p>View.js uses <a href="https://github.com/component/component">component(1)</a> as it&#39;s foundation. Component(1) is an opinionated client-side package manager and build tool. Unlike ad-hoc tools like Bower, where it leaves the building process to the end-user, component(1) handles this completely for you, because of it&#39;s process.</p>
+<p>View.js is split up in several small, unix-like components. Each of these components can be used (<em>and tested</em>) in isolation. This allows an incredible amount of code re-use and flexibility.</p>
+<h2 id="distribution-build-system">Distribution &amp; Build System</h2>
+<p>Everything is run through component(1). This allows a <em>standard</em> and <em>consistent</em> experience.</p>
+<p>Fetching a button UI view component is extremely easy.</p>
+<pre><code class="lang-bash">component install ui/button --save
+</code></pre>
+<p>Wait, you can also build your app if you include another step:</p>
+<pre><code class="lang-bash">component build
+</code></pre>
 </div></section></div></div></body></html>

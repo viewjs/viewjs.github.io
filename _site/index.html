@@ -1,15 +1,36 @@
-<html><head><title>View.js</title><link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css"/><link rel="stylesheet" href="/public/index.css"/><script type="text/javascript" src="//use.typekit.net/phm0nvf.js"></script><script>try{Typekit.load();}catch(e){}</script><script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script><script>hljs.initHighlightingOnLoad();</script></head><body><div class="sidebar"><h1>Docs</h1><ul><li class="category"><a href="/">Overview</a></li><li class="category"><a href="/">Getting Started</a></li></ul></div><div class="container"><div class="wrapper"><section class="top"><a href="https://github.com/viewjs/view">Github</a></section><header><h1 class="title"><a href="">View.js</a></h1></header><section class="content"><div><p>View.js is a primitive low-level view layer. The vision starts off from first-principles: Taking an idea and deconstructing it into it&#39;s most atomic pieces.</p>
-<p>The current landscape for client-side &quot;frameworks&quot; is extremely fragmented, monolithic, inconsistent &mdash; broken.</p>
-<h2 id="monolithic">Monolithic</h2>
-<hr>
-<p>With massive projects like Rails, Ember, and Angular, we&#39;re faced with a world filled with monolithic software. They make it hard to reason about, hard to contribute, hard to understand &mdash; hard to cope with the complexity.</p>
-<p>Above all that, there&#39;s minimal code reuse outside the original project. Some have started to separate common functionality out, but the majority is still stuck, completely tied to the original purpose.</p>
-<p>While this might not be directly tied to monolithism, most frameworks have amounted to a large number of globals. Distribution is a likely cause, which is discussed further, but globals are a code-smell. They&#39;re hacky, unhealthy and hard to maintain.</p>
-<blockquote>
-<p>Have you ever gone into the Ember.js&#39; source code? Pick a file; now can you explain where stuff is coming from?</p>
-</blockquote>
-<h2 id="fragmented">Fragmented</h2>
-<hr>
-<p>Angular has dirty-checking and it&#39;s HTML-based templates; Ember has it&#39;s run-loop and handlebars; React has it&#39;s virtual-dom and JSX.</p>
-<p>When a new framework comes along, a new approach to rendering, what can we do? If you want it, you&#39;ll have to move your app to said framework. Why? Because <em>these frameworks are lock-ins</em>.</p>
-</div></section></div></div></body></html>
+<html>
+<head>
+  <title>View.js</title>
+  <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css" />
+  <link rel="stylesheet" href="/public/css/font-awesome.min.css" />
+  <script type="text/javascript" src="//use.typekit.net/phm0nvf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" type="text/css" href="/public/index.css">
+  <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="hero">
+  <div class="container">
+    <h1>View.js</h1>
+    <h3>A primitive low-level view layer.</h3>
+    <div class="buttons">
+        <a class="wbutton" href="/introduction">
+            <button class="btn intro">
+            Introduction
+            </button>
+        </a>
+        <button class="btn docs">
+            Docs
+            <i class="fa fa-caret-right"></i>
+        </button>
+    </div>
+
+    <div class="snippet">
+        <pre>
+            <code class="hljs">component install viewjs/view</code>
+        </pre>
+    </div>
+</div>
+    
+</body>
+</html>
